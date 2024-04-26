@@ -6,33 +6,62 @@
     <title>Alineación planetaria en CSS </title>
     <link rel="stylesheet" href="https://classless.de/classless.css">
     <link rel="stylesheet" href="https://classless.de/addons/themes.css">
+    <style>
+        .header-content {
+            display: flex;
+            gap: 2rem;
+        }
+        .gatete {
+            width: 25%;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+        }
+        ul {
+            width: auto;
+        }
+    </style>
 </head>
 <body>
+    <header class="row">
+        <div class="header-content">
+            <img class="gatete" src="Gatico.png" alt="Ilustración de un gatito">
+            <div>
+                <h2>International Women Day </br> Women Techmakers Madrid 2024</h2>
+                <p>Bienvenidos a mis humildes ejemplitos de código</p>
+            </div>                
+        </div>
+    </header>
     <main>
         <div class="row">
-            <h3>Ejemplos</h3>
-            <dl>
-                <dt>
-                    <a href="01-focus/focus.html"> Focus</a>
-                </dt>
-                <dt>
-                    <a href="02-line-clamp/line-clamp.html"> Line-clamp</a>
-                </dt>
-                <dt>
-                    <a href="03-subgrid/subgrid.html"> Subgrid</a>
-                </dt>
-                <dt>
-                    <a href="04-switch/switch.html">Switch</a>
-                </dt>
-                <dt>
-                    <a href="05-textarea/textarea.html">Textarea</a>
-                </dt>
-                <dt>
-                    <a href="06-balance/balance.html">Balance & Pretty</a>
-                </dt>
+            <div class="content">
+                <h3>Ejemplos</h3>
+                <ul>
+                    <li>
+                        <a href="01-focus/focus.html"> Focus</a>
+                    </li>
+                    <li>
+                        <a href="02-line-clamp/line-clamp.html"> Line-clamp</a>
+                    </li>
+                    <li>
+                        <a href="03-subgrid/subgrid.html"> Subgrid</a>
+                    </li>
+                    <li>
+                        <a href="04-switch/switch.html">Switch</a>
+                    </li>
+                    <li>
+                        <a href="05-textarea/textarea.html">Textarea</a>
+                    </li>
+                    <li>
+                        <a href="06-balance/balance.html">Balance & Pretty</a>
+                    </li>
 
-            </dl>
-
+                </ul>
+            </div>
         </div>
     </main>
     
