@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" data-theme='sepia']>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subgrid</title>
+    <link rel="stylesheet" href="https://classless.de/classless.css">
+    <link rel="stylesheet" href="https://classless.de/addons/themes.css">
+    <style>
+        .grid {
+            background: hsl(174, 72%, 56%);
+            height: 15rem;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        .subgrid {
+            background: hsl(300, 66%, 37%);
+            grid-column: 2/4;
+            grid-row: 2/4;
+
+            display: grid;
+            grid-template-columns: subgrid;
+            grid-template-rows: subgrid;
+        }
+
+        .last-element {
+            background: hsl(340, 58%, 68%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div class="grid">
+            <div class="subgrid">
+                <div class="last-element"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
